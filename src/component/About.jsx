@@ -26,10 +26,13 @@ function About() {
                 alt=""
               />
             </div>
-            <div data-aos="fade-down-left" className="lg:w-3/5 flex flex-wrap">
+            <div
+              data-aos="fade-down-left"
+              className="lg:w-3/5 flex flex-col flex-wrap"
+            >
               <h1 className="font-mono text-3xl font-bold">Iam Sumit Chavan</h1>
               <h3 className="py-2  text-xl font-mono">
-                Creative Independent Web Developer based in USA
+                Creative Independent Web Developer
               </h3>
               <p
                 className="font-mono text-sm

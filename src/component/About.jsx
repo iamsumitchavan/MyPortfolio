@@ -47,7 +47,7 @@ function About() {
                 of latest trends. I try to leave every line of code I write more
                 readable, accessible, and modular.
               </p>
-              <div className="lg:py-1 md:py-40">
+              <div className="py-10">
                 <button className="bg-black text-whte rounded-sm py-1  w-40 text-white">
                   <a href="chavanresume.pdf" download="resume.pdf">
                     Download cv

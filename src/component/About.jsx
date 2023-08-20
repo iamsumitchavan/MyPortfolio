@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import developer from "../images/developer.jpg";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { memo } from "react";
 
 const url_name = "http://127.0.0.1:5173/images/chavanresume.pdf";
 function About() {
@@ -27,8 +28,8 @@ function About() {
               />
             </div>
             <div
-              data-aos="fade-down-left"
-              className="lg:w-3/5 flex flex-col flex-wrap"
+              data-aos="fade-down"
+              className="lg:w-3/5  flex flex-col flex-wrap"
             >
               <h1 className="font-mono text-3xl font-bold">Iam Sumit Chavan</h1>
               <h3 className="py-2  text-xl font-mono">
@@ -61,4 +62,4 @@ function About() {
     </div>
   );
 }
-export default About;
+export default memo(About);

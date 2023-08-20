@@ -4,18 +4,20 @@ import "aos/dist/aos.css";
 import { memo } from "react";
 import { skillData } from "./SkillData";
 function Skills() {
-  Aos.init();
+  Aos.init({
+    duration: 1000,
+  });
 
   return (
     <div id="skillsSection">
       <div className="h-screen bg-white">
-        <div className="flex justify-center">
+        <div className="flex justify-center ">
           {" "}
           <h1 className="text-xl font-mono">WHAT MY SILLS</h1>
         </div>
         <div className="">
           <div
-            data-aos="fade-left"
+            data-aos="zoom-in"
             className=" flex flex-col md:flex md:flex-row md:justify-center md:flex-wrap md:py-10 gap-2 md:gap-10 items-center"
           >
             {skillData.map((p) => {
@@ -29,7 +31,9 @@ function Skills() {
                     <h1 className="font-mono text-black text-xl pb-5">
                       {p.title}
                     </h1>
-                    <p className="text-sm font-mono">{p.description}</p>
+                    <p className="text-sm font-mono md:block hidden">
+                      {p.description}
+                    </p>
                   </div>
                 </div>
               );

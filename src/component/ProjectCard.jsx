@@ -19,11 +19,13 @@ function ProjectCard({ src, para, handleGetClick, title, url }) {
         <motion.div
           initial={{ scale: 1 }}
           whileHover={{ scale: 1.1 }}
-          className=" lg:bg-white lg:h-80 lg:w-52 shadow-2xl border border-gray-200 flex flex-col"
+          className=" lg:bg-white lg:h-80 lg:w-52 h-52 w-52 shadow-2xl border border-gray-200 flex flex-col"
         >
           <img className=" h-2/5 w-full" src={src} alt="" />
           <div className="flex flex-col items-center justify-between">
-            <h1 className="font-normal py-4 font-mono text-xl">{title}</h1>
+            <h1 className="font-normal py-4 font-mono text-lg md:text-xl">
+              {title}
+            </h1>
             <p className="p-2">{para}</p>
             <div className="flex">
               <span className="font-mono font-normal text-indigo-400 hover:cursor-pointer">

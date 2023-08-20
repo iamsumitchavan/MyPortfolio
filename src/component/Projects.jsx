@@ -13,16 +13,16 @@ function Projects() {
   return (
     <div id="projectsSection">
       <div className="h-screen bg-slate-200">
-        <div data-aos="fade-up" className="py-10 px-10">
+        <div data-aos="fade-up" className="py-10 px-10 ">
           <button className="py-2 w-20 bg-black text-white rounded-sm">
             Projects
           </button>
 
-          <div className="flex justify-center py-24 ">
+          <div className=" flex md:justify-center items-center justify-center h-screen   md:py-24 ">
             <motion.div
               initial={{ opacity: 0, y: 200 }}
               animate={{ opacity: 1, y: 0 }}
-              className="flex gap-10"
+              className="md:flex md:flex-row flex flex-col  md:gap-10 gap-2 pb-14"
             >
               {ProductData.map((p) => (
                 <ProjectCard

@@ -5,7 +5,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { memo } from "react";
 
-const url_name = "http://127.0.0.1:5173/images/chavanresume.pdf";
+const url_name = "http://127.0.0.1:5173/images/sumitres.pdf";
 function About() {
   Aos.init({});
   return (
@@ -15,11 +15,8 @@ function About() {
           <button className="py-2 w-20 bg-black text-white rounded-sm">
             About
           </button>
-          <h1 className="font-mono font-extrabold text-3xl py-3 text-white ">
-            About me
-          </h1>
 
-          <div className="lg:flex lg:space-x-48  lg:py-8">
+          <div className="flex justify-center items-center h-screen space-x-16">
             <div data-aos="fade-up">
               <img
                 className="lg:h-80 lg:w-96 hidden lg:block shadow-xl rounded-sm"
@@ -50,7 +47,7 @@ function About() {
               </p>
               <div className="py-10">
                 <button className="bg-black text-whte rounded-sm py-1  w-40 text-white">
-                  <a href="chavanresume.pdf" download="resume.pdf">
+                  <a href="sumitres.pdf" download="resume.pdf">
                     Download cv
                   </a>
                 </button>
